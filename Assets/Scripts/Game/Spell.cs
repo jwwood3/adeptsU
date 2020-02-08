@@ -47,6 +47,12 @@ public class Spell : MonoBehaviour
     public GameObject prefab19B;
     public GameObject prefab20A;
     public GameObject prefab20B;
+
+    void Start()
+    {
+        DontDestroyOnLoad(this);
+    }
+
     public static GameObject getSpellCard(string spellId)
     {
         switch (spellId)
@@ -213,6 +219,12 @@ public class Spell : MonoBehaviour
         Vector3 tran = new Vector3(8.25f, 6.2f, 0f);
         GameObject newCard = Instantiate(getSpellCard(spellId), tran, Quaternion.identity);
         newCard.tag = "ActiveCard";
+    }
+
+    public static void spellSelectLayout(string idStub)
+    {
+        Instantiate(getSpellCard(idStub + "A"), new Vector3(-1f, 1.5f, -6f), Quaternion.identity);
+        Instantiate(getSpellCard(idStub + "B"), new Vector3(1f, 1.5f, -6f), Quaternion.identity);
     }
 
     void Awake()

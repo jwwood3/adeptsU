@@ -14,6 +14,7 @@ public class GameMaster : MonoBehaviour
     public static int[] BATTLEGROUND = new int[20] {2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2};
     public static int[] PLAYER2      = new int[20] {2,1,1,1,2,2,2,1,2,1,1,2,1,1,2,2,2,2,1,1};
     public static int[] PLAYER5      = new int[20] {1,1,2,2,2,1,1,1,1,2,2,1,2,2,1,2,1,1,2,2};
+    public static int[] CUSTOM;
     public GameObject EndGameSlide;
     public Camera boardCam;
     public Camera queueCam;
@@ -22,6 +23,7 @@ public class GameMaster : MonoBehaviour
     public GameObject boardCanvas;
     public GameObject queueCanvas;
     public GameObject cardCanvas;
+    public GameObject discardCanvas;
     public static int[] transfiguration = new int[2] { -1, -1 };
     public static int mode = 1;
     public static string activeSpell = "";
@@ -1135,6 +1137,7 @@ public class GameMaster : MonoBehaviour
         if (menu != null) {
             Play MenuData = menu.GetComponent<Play>();
             playernum = MenuData.PLAYERNUM;
+            print(MenuData.spellLine);
             switch (MenuData.spellLine)
             {
                 case 0:
@@ -1151,6 +1154,9 @@ public class GameMaster : MonoBehaviour
                     break;
                 case 4:
                     spellOrder = PLAYER5;
+                    break;
+                case 5:
+                    spellOrder = CUSTOM;
                     break;
                 default:
                     spellOrder = FIRSTGAME;
@@ -1220,6 +1226,7 @@ public class GameMaster : MonoBehaviour
                 boardCanvas.SetActive(false);
                 queueCanvas.SetActive(true);
                 cardCanvas.SetActive(false);
+                discardCanvas.SetActive(false);
                 mode = 2;
             }
             else
@@ -1232,6 +1239,7 @@ public class GameMaster : MonoBehaviour
                 boardCanvas.SetActive(true);
                 queueCanvas.SetActive(false);
                 cardCanvas.SetActive(false);
+                discardCanvas.SetActive(false);
             }
         }
         else if (Input.GetKeyDown(KeyCode.C))
@@ -1246,6 +1254,7 @@ public class GameMaster : MonoBehaviour
                 boardCanvas.SetActive(false);
                 queueCanvas.SetActive(false);
                 cardCanvas.SetActive(true);
+                discardCanvas.SetActive(false);
                 mode = 3;
             }
             else
@@ -1258,6 +1267,7 @@ public class GameMaster : MonoBehaviour
                 boardCanvas.SetActive(true);
                 queueCanvas.SetActive(false);
                 cardCanvas.SetActive(false);
+                discardCanvas.SetActive(false);
             }
         }
         else if (Input.GetKeyDown(KeyCode.D))// && activeSpell == "Munificence")
@@ -1272,6 +1282,7 @@ public class GameMaster : MonoBehaviour
                 boardCanvas.SetActive(false);
                 queueCanvas.SetActive(false);
                 cardCanvas.SetActive(false);
+                discardCanvas.SetActive(true);
                 mode = 4;
             }
             else
@@ -1284,6 +1295,7 @@ public class GameMaster : MonoBehaviour
                 boardCanvas.SetActive(true);
                 queueCanvas.SetActive(false);
                 cardCanvas.SetActive(false);
+                discardCanvas.SetActive(false);
             }
         }
         else if (Input.GetKeyDown(KeyCode.Return))

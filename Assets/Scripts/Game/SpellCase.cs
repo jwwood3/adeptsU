@@ -1,6 +1,8 @@
 ﻿using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static GameMaster;
 using static Spell;
 
@@ -25,7 +27,42 @@ public class SpellCase : MonoBehaviour
     {
         if (this.tag == "Card")
         {
-            if (activeSpell == "Purge")
+            if(activeSpell == "Setup")
+            {
+                int currentNum = Int32.Parse(spellcard.cardId.Substring(0, spellcard.cardId.Length - 1));
+                switch (spellcard.cardId[spellcard.cardId.Length - 1])
+                {
+                    case 'A':
+                        CUSTOM[currentNum - 1] = 1;
+                        break;
+                    case 'B':
+                        CUSTOM[currentNum - 1] = 2;
+                        break;
+                    default:
+                        CUSTOM[currentNum - 1] = 1;
+                        break;
+                }
+                GameObject[] cardObjs = GameObject.FindGameObjectsWithTag("Card");
+                for (int i = 0; i < cardObjs.Length; i++)
+                {
+                    if (cardObjs[i] != this)
+                    {
+                        Destroy(cardObjs[i]);
+                    }
+                }
+                if (currentNum != 20)
+                {
+                    spellSelectLayout("" + (currentNum + 1));
+                }
+                else
+                {
+                    activeSpell = "";
+                    SceneManager.LoadSceneAsync("Main");
+                }
+                Destroy(this);
+                
+            }
+            else if (activeSpell == "Purge")
             {
                 print("The game thinks you're discarding a spell");
                 this.gameObject.transform.localScale = new Vector3(0, 0, 0);
