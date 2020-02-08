@@ -29,7 +29,14 @@ public class Play : MonoBehaviour
 
     public void load()
     {
-        SceneManager.LoadSceneAsync("Main");
+        if (spellLine == 5)
+        {
+            SceneManager.LoadSceneAsync("SpellSelect");
+        }
+        else
+        {
+            SceneManager.LoadSceneAsync("Main");
+        }
     }
 
 }
