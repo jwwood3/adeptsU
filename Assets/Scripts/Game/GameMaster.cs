@@ -1298,6 +1298,18 @@ public class GameMaster : MonoBehaviour
                 discardCanvas.SetActive(false);
             }
         }
+        else if (Input.GetKeyDown(KeyCode.V))
+        {
+            GameObject[] cards = GameObject.FindGameObjectsWithTag("Card");
+            for(int i = 0; i < cards.Length; i++)
+            {
+                cards[i].GetComponent<BoxCollider>().enabled = !cards[i].GetComponent<BoxCollider>().enabled;
+                for (int j = 0; j < cards[i].transform.childCount; j++)
+                {
+                    cards[i].transform.GetChild(j).GetComponent<MeshRenderer>().enabled = !cards[i].transform.GetChild(j).GetComponent<MeshRenderer>().enabled;
+                }
+            }
+        }
         else if (Input.GetKeyDown(KeyCode.Return))
         {
             if (activeSpell == "Purge")
