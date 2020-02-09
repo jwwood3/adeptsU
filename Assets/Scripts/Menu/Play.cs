@@ -27,7 +27,7 @@ public class Play : MonoBehaviour
         spellLine = spellDropdown.value;
     }
 
-    public void load()
+    public void loadGame()
     {
         if (spellLine == 5)
         {
@@ -37,6 +37,12 @@ public class Play : MonoBehaviour
         {
             SceneManager.LoadSceneAsync("Main");
         }
+    }
+
+    public void loadInstructions()
+    {
+        SceneManager.LoadSceneAsync("HowTo");
+        Destroy(this.gameObject);
     }
 
 }
