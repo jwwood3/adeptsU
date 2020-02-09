@@ -42,6 +42,7 @@ public class Play : MonoBehaviour
     public void loadInstructions()
     {
         SceneManager.LoadSceneAsync("HowTo");
+        Destroy(GameObject.Find("SpellContainer"));
         Destroy(this.gameObject);
     }
 
