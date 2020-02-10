@@ -24,6 +24,11 @@ public class GameMaster : MonoBehaviour
     public GameObject queueCanvas;
     public GameObject cardCanvas;
     public GameObject discardCanvas;
+    public Material p1P1, p1P2, p1P3, p1P4;
+    public Material p2P1, p2P2, p2P3, p2P4;
+    public Material p3P1, p3P2, p3P3, p3P4;
+    public Material p4P1, p4P2, p4P3, p4P4;
+    public Material p5P1, p5P2, p5P3, p5P4;
     public static int[] transfiguration = new int[2] { -1, -1 };
     public static int mode = 1;
     public static string activeSpell = "";
@@ -1088,13 +1093,13 @@ public class GameMaster : MonoBehaviour
                 players[i].battery[j] = 0;
             }
         }
-        GameObject slide = Instantiate(MASTER.EndGameSlide,new Vector3(-9.18f,2.04f,0.0f),Quaternion.identity);
-        string endText = "";
-        for(int i = 0; i < PLAYERS; i++)
-        {
-            endText += "Player " + (i + 1) + ": " + players[i].manaCount + "\n";
-        }
-        ((TextMeshPro)(slide.GetComponentInChildren(typeof(TextMeshPro)))).text = endText;
+        //GameObject slide = Instantiate(MASTER.EndGameSlide,new Vector3(-9.18f,2.04f,0.0f),Quaternion.identity);
+        //string endText = "";
+        //for(int i = 0; i < PLAYERS; i++)
+        //{
+        //    endText += "Player " + (i + 1) + ": " + players[i].manaCount + "\n";
+        //}
+        //((TextMeshPro)(slide.GetComponentInChildren(typeof(TextMeshPro)))).text = endText;
     }
 
     public static int convertBattery(int batLevel)
@@ -1206,6 +1211,100 @@ public class GameMaster : MonoBehaviour
         }
         xPos += 0.1f * p;
         return new Vector3(xPos, yPos, zPos);
+    }
+
+    Material getMarkerMaterial(int index)
+    {
+        if (players[index].manaCount < 100)
+        {
+            switch (index)
+            {
+                case 0:
+                    return p1P1;
+                case 1:
+                    return p2P1;
+                case 2:
+                    return p3P1;
+                case 3:
+                    return p4P1;
+                case 4:
+                    return p5P1;
+                default:
+                    return p1P1;
+            }
+        }
+        else if(players[index].manaCount < 200)
+        {
+            switch (index)
+            {
+                case 0:
+                    return p1P2;
+                case 1:
+                    return p2P2;
+                case 2:
+                    return p3P2;
+                case 3:
+                    return p4P2;
+                case 4:
+                    return p5P2;
+                default:
+                    return p1P2;
+            }
+        }
+        else if(players[index].manaCount < 300)
+        {
+            switch (index)
+            {
+                case 0:
+                    return p1P3;
+                case 1:
+                    return p2P3;
+                case 2:
+                    return p3P3;
+                case 3:
+                    return p4P3;
+                case 4:
+                    return p5P3;
+                default:
+                    return p1P3;
+            }
+        }
+        else if(players[index].manaCount < 400)
+        {
+            switch (index)
+            {
+                case 0:
+                    return p1P4;
+                case 1:
+                    return p2P4;
+                case 2:
+                    return p3P4;
+                case 3:
+                    return p4P4;
+                case 4:
+                    return p5P4;
+                default:
+                    return p1P4;
+            }
+        }
+        else
+        {
+            switch (index)
+            {
+                case 0:
+                    return p1P1;
+                case 1:
+                    return p2P1;
+                case 2:
+                    return p3P1;
+                case 3:
+                    return p4P1;
+                case 4:
+                    return p5P1;
+                default:
+                    return p1P1;
+            }
+        }
     }
 
     void Update()
@@ -1555,6 +1654,7 @@ public class GameMaster : MonoBehaviour
         for(int i = 0; i < manaMarkers.Length; i++)
         {
             manaMarkers[i].transform.position = getMarkerPosition(i);
+            manaMarkers[i].GetComponent<MeshRenderer>().material = getMarkerMaterial(i);
         }
         
         
