@@ -9,6 +9,7 @@ TagManager:
   - DisCard
   - DispCard
   - ActiveCard
+  - Miner
   layers:
   - Default
   - TransparentFX

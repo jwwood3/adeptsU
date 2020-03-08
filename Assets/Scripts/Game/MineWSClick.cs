@@ -7,10 +7,67 @@ public class MineWSClick : MonoBehaviour
 {
     public int mineNum = 0;
     public int wsNum = 1;
+    public int[] minerVals;
+
+    void Start()
+    {
+        print("starting: " + mineNum + ":" + wsNum);
+        minerVals = mines[mineNum].sites[wsNum];
+    }
+
+    void Update()
+    {
+        if (minerVals != mines[mineNum].sites[wsNum])
+        {
+            minerVals = mines[mineNum].sites[wsNum];
+            changeMiners();
+        }
+    }
+
+    void changeMiners()
+    {
+        if (minerVals[0] > 16)
+        {
+            print("BBBBBAAAAAADDDDD: Mine - " + mineNum + " WS - " + wsNum + " has " + minerVals[0]);
+        }
+        for(int i = 0; i < minerVals[0]; i++)
+        {
+            MeshRenderer mr = GameObject.Find("minerMarker" + mineNum + "-" + wsNum + "/Miner (" + i + ")").GetComponent<MeshRenderer>();
+            switch (minerVals[1])
+            {
+                case -1:
+                    mr.materials[0] = MASTER.clearThing;
+                    break;
+                case 0:
+                    mr.materials[0] = MASTER.p1P1;
+                    break;
+                case 1:
+                    mr.materials[0] = MASTER.p2P1;
+                    break;
+                case 2:
+                    mr.materials[0] = MASTER.p3P1;
+                    break;
+                case 3:
+                    mr.materials[0] = MASTER.p4P1;
+                    break;
+                case 4:
+                    mr.materials[0] = MASTER.p5P1;
+                    break;
+                default:
+                    mr.materials[0] = MASTER.p4P3;
+                    break;
+            }
+        }
+        for(int i = minerVals[0]; i < 16; i++)
+        {
+            MeshRenderer mr = GameObject.Find("minerMarker" + mineNum + "-" + wsNum + "/Miner (" + i + ")").GetComponent<MeshRenderer>();
+            mr.materials[0] = MASTER.clearThing;
+        }
+    }
 
     void OnMouseUp()
     {
-        if(activeSpell == "Telepathy")
+        if (activeSpell == "Telepathy")
         {
             if (players[turn].miners == 0 && mines[mineNum].sites[wsNum][1]==turn)
             {

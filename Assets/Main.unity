@@ -1546,6 +1546,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker3-2
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -1588,6 +1593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 3
   wsNum: 2
+  minerVals: 
 --- !u!61 &141233042
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1904,6 +1910,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker0-2
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -1946,6 +1957,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 0
   wsNum: 2
+  minerVals: 
 --- !u!61 &155940374
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2731,6 +2743,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker7-2
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -2773,6 +2790,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 7
   wsNum: 2
+  minerVals: 
 --- !u!61 &184561675
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5641,6 +5659,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker1-0
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -5683,6 +5706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 1
   wsNum: 0
+  minerVals: 
 --- !u!1 &395658029
 GameObject:
   m_ObjectHideFlags: 0
@@ -6171,6 +6195,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker7-1
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -6213,6 +6242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 7
   wsNum: 1
+  minerVals: 
 --- !u!61 &407245605
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6923,6 +6953,7 @@ MonoBehaviour:
   p5P2: {fileID: 2100000, guid: 26a296ad917950b47b59f07b20ab33f5, type: 2}
   p5P3: {fileID: 2100000, guid: 2fdfb4ed9799e974481b69edcfa4562e, type: 2}
   p5P4: {fileID: 2100000, guid: 11869b77afdb3074cbf095b567d356aa, type: 2}
+  clearThing: {fileID: 2100000, guid: 048f8e1e268cbed4b838f44845c3ca2b, type: 2}
 --- !u!4 &437366411
 Transform:
   m_ObjectHideFlags: 0
@@ -7768,6 +7799,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker5-0
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -7810,6 +7846,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 5
   wsNum: 0
+  minerVals: 
 --- !u!1 &492241881
 GameObject:
   m_ObjectHideFlags: 0
@@ -8218,7 +8255,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9546,6 +9583,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker4-1
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -9588,6 +9630,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 4
   wsNum: 1
+  minerVals: 
 --- !u!61 &570573232
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11157,7 +11200,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12339,6 +12382,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker2-3
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -12381,6 +12429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 2
   wsNum: 3
+  minerVals: 
 --- !u!61 &746084785
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13337,6 +13386,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker7-0
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -13379,6 +13433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 7
   wsNum: 0
+  minerVals: 
 --- !u!1 &790897629 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6584710723691137275, guid: c89eaf5d51c8ce444903bec355f636b8,
@@ -13639,6 +13694,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker7-3
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -13681,6 +13741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 7
   wsNum: 3
+  minerVals: 
 --- !u!61 &802099778
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16029,6 +16090,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker6-3
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -16071,6 +16137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 6
   wsNum: 3
+  minerVals: 
 --- !u!61 &896755637
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19965,6 +20032,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker3-1
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -20007,6 +20079,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 3
   wsNum: 1
+  minerVals: 
 --- !u!61 &1105781585
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20125,6 +20198,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker1-2
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -20167,6 +20245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 1
   wsNum: 2
+  minerVals: 
 --- !u!61 &1135316259
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21469,6 +21548,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker2-2
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -21511,6 +21595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 2
   wsNum: 2
+  minerVals: 
 --- !u!61 &1188077531
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23830,6 +23915,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker4-3
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -23872,6 +23962,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 4
   wsNum: 3
+  minerVals: 
 --- !u!61 &1294340292
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25509,6 +25600,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker2-0
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -25551,6 +25647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 2
   wsNum: 0
+  minerVals: 
 --- !u!1 &1362685395
 GameObject:
   m_ObjectHideFlags: 0
@@ -26813,6 +26910,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker3-0
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -26855,6 +26957,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 3
   wsNum: 0
+  minerVals: 
 --- !u!1 &1390148042
 GameObject:
   m_ObjectHideFlags: 0
@@ -27145,6 +27248,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker5-1
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -27187,6 +27295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 5
   wsNum: 1
+  minerVals: 
 --- !u!61 &1393418115
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28878,6 +28987,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker5-3
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -28920,6 +29034,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 5
   wsNum: 3
+  minerVals: 
 --- !u!61 &1441126269
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29513,6 +29628,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker5-2
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -29555,6 +29675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 5
   wsNum: 2
+  minerVals: 
 --- !u!61 &1475934110
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33548,6 +33669,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker1-1
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -33590,6 +33716,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 1
   wsNum: 1
+  minerVals: 
 --- !u!61 &1613270712
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34302,6 +34429,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker4-0
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -34344,6 +34476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 4
   wsNum: 0
+  minerVals: 
 --- !u!1 &1644428913
 GameObject:
   m_ObjectHideFlags: 0
@@ -34705,6 +34838,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker1-3
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -34747,6 +34885,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 1
   wsNum: 3
+  minerVals: 
 --- !u!61 &1652077278
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35459,6 +35598,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker2-1
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -35501,6 +35645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 2
   wsNum: 1
+  minerVals: 
 --- !u!61 &1671774776
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36358,10 +36503,30 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4021013258089964733, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021013258089964733, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021013258089964733, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4296322332362641656, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_Name
       value: minerMarker0-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
       objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
@@ -36405,6 +36570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 0
   wsNum: 1
+  minerVals: 
 --- !u!61 &1725501217
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36919,6 +37085,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker6-2
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -36961,6 +37132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 6
   wsNum: 2
+  minerVals: 
 --- !u!61 &1753381060
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39424,6 +39596,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker3-3
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -39466,6 +39643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 3
   wsNum: 3
+  minerVals: 
 --- !u!61 &1906002247
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42502,6 +42680,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker0-3
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -42544,6 +42727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 0
   wsNum: 3
+  minerVals: 
 --- !u!61 &2090269435
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43016,6 +43200,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker4-2
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -43058,6 +43247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 4
   wsNum: 2
+  minerVals: 
 --- !u!61 &2114993129
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43176,6 +43366,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker6-1
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -43218,6 +43413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 6
   wsNum: 1
+  minerVals: 
 --- !u!61 &2115969803
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43336,6 +43532,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minerMarker6-0
       objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 7679522651712768975, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -43378,6 +43579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 6
   wsNum: 0
+  minerVals: 
 --- !u!1 &2125738338
 GameObject:
   m_ObjectHideFlags: 0
@@ -43822,6 +44024,51 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 628040926566272885, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 628040926566272885, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 628040926566272885, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 977984618346306320, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 977984618346306320, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 977984618346306320, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1461745042208611662, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1461745042208611662, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1461745042208611662, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1717228225426299307, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_Name
@@ -43897,15 +44144,220 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.7
       objectReference: {fileID: 0}
+    - target: {fileID: 2877943020835656413, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877943020835656413, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877943020835656413, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3156881110929821226, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3162546222276442083, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162546222276442083, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162546222276442083, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256705302317625829, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256705302317625829, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3256705302317625829, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3329568216803196573, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021013258089964733, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021013258089964733, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021013258089964733, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4296322332362641656, guid: e9a7471b2737e694bb48063c461a3733,
         type: 3}
       propertyPath: m_Name
       value: minerMarker0-0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521912265595957040, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521912265595957040, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521912265595957040, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934450316799530029, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934450316799530029, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934450316799530029, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6002221808215426708, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6002221808215426708, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6002221808215426708, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550838867428877599, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_Name
+      value: Miner (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7592811441435653887, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7592811441435653887, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7592811441435653887, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7997369260253125162, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7997369260253125162, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7997369260253125162, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062036782444841935, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062036782444841935, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062036782444841935, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8079502337855516221, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8079502337855516221, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8079502337855516221, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323676650715610651, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323676650715610651, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323676650715610651, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9218928239425630638, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9218928239425630638, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9218928239425630638, guid: e9a7471b2737e694bb48063c461a3733,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9a7471b2737e694bb48063c461a3733, type: 3}
@@ -43929,6 +44381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineNum: 0
   wsNum: 0
+  minerVals: 
 --- !u!1001 &5231362707266707290
 PrefabInstance:
   m_ObjectHideFlags: 0
