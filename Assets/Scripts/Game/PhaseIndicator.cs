@@ -98,7 +98,7 @@ public class PhaseIndicator : MonoBehaviour
         }
         else if (activeSpell == "Ambition2" || activeSpell == "Ambition1")
         {
-            indic.text = "Ambition: Pick a mine or work site to place a miner";
+            indic.text = "Ambition: Pick a mine to place a miner";
         }
         else if (activeSpell == "Initiative")
         {

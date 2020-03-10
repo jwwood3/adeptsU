@@ -7,10 +7,73 @@ public class MineWSClick : MonoBehaviour
 {
     public int mineNum = 0;
     public int wsNum = 1;
+    public int[] minerVals;
+    static MeshRenderer mr;
+    static Material[] mats;
+
+    void Start()
+    {
+        print("starting: " + mineNum + ":" + wsNum);
+        minerVals = mines[mineNum].sites[wsNum];
+    }
+
+    void Update()
+    {
+        if (minerVals != mines[mineNum].sites[wsNum])
+        {
+            minerVals = mines[mineNum].sites[wsNum];
+            changeMiners();
+        }
+    }
+
+    void changeMiners()
+    {
+        if (minerVals[0] > 16)
+        {
+            print("BBBBBAAAAAADDDDD: Mine - " + mineNum + " WS - " + wsNum + " has " + minerVals[0]);
+        }
+        for(int i = 0; i < minerVals[0]; i++)
+        {
+            mr = GameObject.Find("minerMarker" + mineNum + "-" + wsNum + "/Miner (" + i + ")").GetComponent<MeshRenderer>();
+            mats = mr.materials;
+            switch (minerVals[1])
+            {
+                case -1:
+                    mats[0] = MASTER.clearThing;
+                    break;
+                case 0:
+                    mats[0] = MASTER.p1P1;
+                    break;
+                case 1:
+                    mats[0] = MASTER.p2P1;
+                    break;
+                case 2:
+                    mats[0] = MASTER.p3P1;
+                    break;
+                case 3:
+                    mats[0] = MASTER.p4P1;
+                    break;
+                case 4:
+                    mats[0] = MASTER.p5P1;
+                    break;
+                default:
+                    mats[0] = MASTER.p4P3;
+                    break;
+            }
+            mr.materials = mats;
+        }
+        for(int i = minerVals[0]; i < 16; i++)
+        {
+            mr = GameObject.Find("minerMarker" + mineNum + "-" + wsNum + "/Miner (" + i + ")").GetComponent<MeshRenderer>();
+            mats = mr.materials;
+            mats[0] = MASTER.clearThing;
+            mr.materials = mats;
+        }
+    }
 
     void OnMouseUp()
     {
-        if(activeSpell == "Telepathy")
+        if (activeSpell == "Telepathy")
         {
             if (players[turn].miners == 0 && mines[mineNum].sites[wsNum][1]==turn)
             {

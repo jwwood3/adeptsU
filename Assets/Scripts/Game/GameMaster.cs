@@ -29,6 +29,7 @@ public class GameMaster : MonoBehaviour
     public Material p3P1, p3P2, p3P3, p3P4;
     public Material p4P1, p4P2, p4P3, p4P4;
     public Material p5P1, p5P2, p5P3, p5P4;
+    public Material clearThing;
     public static int[] transfiguration = new int[2] { -1, -1 };
     public static int mode = 1;
     public static string activeSpell = "";
@@ -51,7 +52,7 @@ public class GameMaster : MonoBehaviour
     public static int subPhase = 3;
     public static int first = 0;
     public static int turn = 0;
-    public static Mine[] mines;
+    public static Mine[] mines = new Mine[8];
     public static Deck drawDeck;
     public static Deck discard;
     public static int gemBoosted = -1;
@@ -655,6 +656,7 @@ public class GameMaster : MonoBehaviour
 
     public static void setupMines()
     {
+        print("Setting up mines");
         mines = new Mine[8];
         int sub = 10;
         int maj = 8;
@@ -1134,8 +1136,9 @@ public class GameMaster : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        mode = 1;
         int playernum = 5;
         int[] spellOrder = FIRSTGAME;
         GameObject menu = GameObject.Find("MenuData");
