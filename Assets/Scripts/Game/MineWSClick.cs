@@ -8,6 +8,8 @@ public class MineWSClick : MonoBehaviour
     public int mineNum = 0;
     public int wsNum = 1;
     public int[] minerVals;
+    static MeshRenderer mr;
+    static Material[] mats;
 
     void Start()
     {
@@ -32,36 +34,40 @@ public class MineWSClick : MonoBehaviour
         }
         for(int i = 0; i < minerVals[0]; i++)
         {
-            MeshRenderer mr = GameObject.Find("minerMarker" + mineNum + "-" + wsNum + "/Miner (" + i + ")").GetComponent<MeshRenderer>();
+            mr = GameObject.Find("minerMarker" + mineNum + "-" + wsNum + "/Miner (" + i + ")").GetComponent<MeshRenderer>();
+            mats = mr.materials;
             switch (minerVals[1])
             {
                 case -1:
-                    mr.materials[0] = MASTER.clearThing;
+                    mats[0] = MASTER.clearThing;
                     break;
                 case 0:
-                    mr.materials[0] = MASTER.p1P1;
+                    mats[0] = MASTER.p1P1;
                     break;
                 case 1:
-                    mr.materials[0] = MASTER.p2P1;
+                    mats[0] = MASTER.p2P1;
                     break;
                 case 2:
-                    mr.materials[0] = MASTER.p3P1;
+                    mats[0] = MASTER.p3P1;
                     break;
                 case 3:
-                    mr.materials[0] = MASTER.p4P1;
+                    mats[0] = MASTER.p4P1;
                     break;
                 case 4:
-                    mr.materials[0] = MASTER.p5P1;
+                    mats[0] = MASTER.p5P1;
                     break;
                 default:
-                    mr.materials[0] = MASTER.p4P3;
+                    mats[0] = MASTER.p4P3;
                     break;
             }
+            mr.materials = mats;
         }
         for(int i = minerVals[0]; i < 16; i++)
         {
-            MeshRenderer mr = GameObject.Find("minerMarker" + mineNum + "-" + wsNum + "/Miner (" + i + ")").GetComponent<MeshRenderer>();
-            mr.materials[0] = MASTER.clearThing;
+            mr = GameObject.Find("minerMarker" + mineNum + "-" + wsNum + "/Miner (" + i + ")").GetComponent<MeshRenderer>();
+            mats = mr.materials;
+            mats[0] = MASTER.clearThing;
+            mr.materials = mats;
         }
     }
 
