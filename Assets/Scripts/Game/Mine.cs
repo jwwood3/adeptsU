@@ -8,16 +8,16 @@ public class Mine
     public int pool = 0;
     public int[][] sites = new int[4][] { new int[2] { 0, -1 }, new int[2] { 0, -1 }, new int[2] { 0, -1 }, new int[2] { 0, -1 } };
     public bool isBoosted = false;
-    public bool closed = false;
+    public int closed = -1;
 
     public Mine(int poolNum)
     {
         this.pool = poolNum;
     }
 
-    public bool isOpen()
+    public bool isOpen(int turnNum)
     {
-        return !closed && (this.sites[1][0] == 0 || this.sites[2][0] == 0 || this.sites[3][0] == 0);
+        return (closed==-1 || closed==turnNum) && (this.sites[1][0] == 0 || this.sites[2][0] == 0 || this.sites[3][0] == 0);
     }
 
     public bool isEmpty()

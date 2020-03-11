@@ -773,7 +773,7 @@ public class GameMaster : MonoBehaviour
         for(int i = 0; i < 8; i++)
         {
             mines[i].isBoosted = false;
-            mines[i].closed = false;
+            mines[i].closed = -1;
         }
         for(int i = 0; i < PLAYERS; i++)
         {
@@ -1024,7 +1024,9 @@ public class GameMaster : MonoBehaviour
             players[i].intensify = -1;
             players[i].negation = 0;
             players[i].siphoned = false;
+            players[i].realignment = false;
         }
+        siphoning = false;
         siphonBat = new int[8] { -1, -1, -1, -1, -1, -1, -1, -1 };
         imperfection = new int[8] { 0, 0, 0, 0, 0, 0, 0, 0 };
         round++;

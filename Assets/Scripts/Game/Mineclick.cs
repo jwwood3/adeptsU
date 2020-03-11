@@ -22,7 +22,7 @@ public class Mineclick : MonoBehaviour
         print(mineNum);
         print(mines.Length);
         print(toAdd);
-        print(mines[mineNum].isOpen());
+        print(mines[mineNum].isOpen(turn));
         print("turn: " + turn + " miners: " + players[turn].miners);
         //GameMaster.clickedMine = mineNum;
         if (phase == 1 && subPhase == 2 && mines[mineNum].isOpenSpec() && adeptBonuses[0] != -1 && players[adeptBonuses[0]].miners >= toAdd)
@@ -31,7 +31,7 @@ public class Mineclick : MonoBehaviour
             subPhase = 3;
             turn = first;
         }
-        else if (phase == 1 && subPhase == 3 && mines[mineNum].isOpen() && players[turn].miners >= toAdd && activeSpell == "")
+        else if (phase == 1 && subPhase == 3 && mines[mineNum].isOpen(turn) && players[turn].miners >= toAdd && activeSpell == "")
         {
             if (!(subsidence && mines[mineNum].isEmpty() && toAdd > 2))
             {
@@ -95,7 +95,7 @@ public class Mineclick : MonoBehaviour
         }
         else if (activeSpell == "Ambition2")
         {
-            if (mines[mineNum].isOpen() && players[turn].miners >= 1)
+            if (mines[mineNum].isOpen(turn) && players[turn].miners >= 1)
             {
                 mines[mineNum].place(1, turn);
             }
@@ -103,7 +103,7 @@ public class Mineclick : MonoBehaviour
         }
         else if (activeSpell == "Ambition1" && players[turn].miners >= 1)
         {
-            if (mines[mineNum].isOpen())
+            if (mines[mineNum].isOpen(turn))
             {
                 mines[mineNum].place(1, turn);
             }
@@ -112,14 +112,14 @@ public class Mineclick : MonoBehaviour
         }
         else if (activeSpell == "Initiative" && players[turn].miners >= toAdd)
         {
-            if (mines[mineNum].isOpen())
+            if (mines[mineNum].isOpen(turn))
             {
                 mines[mineNum].place(toAdd, turn);
             }
             activeSpell = "";
             nextTurn();
         }
-        else if (activeSpell == "Backlash" && mines[mineNum].isOpen())
+        else if (activeSpell == "Backlash" && mines[mineNum].isOpen(turn))
         {
             if (mines[mineNum].sites[3][0] == 0)
             {
@@ -144,16 +144,16 @@ public class Mineclick : MonoBehaviour
         }
         else if (activeSpell == "Barrier")
         {
-            mines[mineNum].closed = true;
+            mines[mineNum].closed = turn;
             activeSpell = "";
             nextTurn();
         }
-        else if (activeSpell == "Gateways" && mines[mineNum].isOpen())
+        else if (activeSpell == "Gateways" && mines[mineNum].isOpen(turn))
         {
             mines[mineNum].place(toAdd, turn);
             activeSpell = "";
         }
-        else if (activeSpell == "Precedence" && mines[mineNum].isOpen())
+        else if (activeSpell == "Precedence" && mines[mineNum].isOpen(turn))
         {
             mines[mineNum].place(toAdd, turn);
             if (players[turn].miners <= 1)
